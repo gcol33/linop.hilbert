@@ -1,0 +1,8 @@
+^dev_notes$
+^linop\.hilbert\.Rcheck$
+^linop\.hilbert_.*\.tar\.gz$
+^\.Rproj\.user$
+^.*\.Rproj$
+^\.github$
+^_pkgdown\.yml$
+^docs$

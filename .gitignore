@@ -1,0 +1,17 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rcheck/
+*.tar.gz
+docs/
+
+# The global ignore excludes dev_notes/ and *_plan.md. Both are governing
+# documents here and CLAUDE.md cites them, so re-include them; .Rbuildignore
+# keeps them out of the built package.
+!dev_notes/
+!implementation_plan.md
+
+# A spike writes a .done marker so a detached launcher can tell it finished.
+# The results next to it are the evidence; the marker is a timestamp.
+dev_notes/spikes/results/*.done
