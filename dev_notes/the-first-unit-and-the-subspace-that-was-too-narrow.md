@@ -86,6 +86,16 @@ converged answer, which is the failure mode the floor exists for.
 `cert_rows()` and `build_certificate()`. No `:::` anywhere. The export decision was
 scoped correctly.
 
+## Before CRAN
+
+`Remotes: gcol33/linop` is in DESCRIPTION so that `pak`, `remotes` and
+`r-lib/actions/setup-r-dependencies` can resolve `Imports: linop` while linop is not
+on CRAN. It is the reason the README's install line works and the reason CI can
+build at all. **It comes out on the day linop is accepted**, together with the
+`Additional_repositories:` question: with linop on CRAN neither field is needed, and
+the dependency must stay one-directional so that core never carries a `Suggests` on
+this package.
+
 ## Corrections
 
 | Where | Was | Is |
